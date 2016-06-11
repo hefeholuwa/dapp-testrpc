@@ -14,7 +14,20 @@ var simpleStoreInstance = SimpleStoreFactory.new(
      gas: 3000000
    }, function (e, contract){
     console.log(e, contract);
+
     if (typeof contract.address !== 'undefined') {
-      console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash);
+      //console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash);
+
+      contract.set(3000, {from: web3.eth.accounts[0], gas: 3000000}, function(err, result){
+        console.log('SimpleStore set', err, result);
+      });
+
+      contract.SetStore({_value: 3000}, function(err, result){
+        console.log('SimpleStore event', err, result);
+
+        contract.get(function(err, result){
+          console.log('SimpleStore get', err, result);
+        });
+      });
     }
- })
+ });
