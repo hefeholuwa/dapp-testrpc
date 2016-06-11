@@ -1,0 +1,26 @@
+{
+  "name": "dapp-testrpc",
+  "version": "0.0.1",
+  "description": "TestRPC dApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "--"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ledgerlabs/dapp-testrpc.git"
+  },
+  "keywords": [
+    "dapp",
+    "testrpc"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ledgerlabs/dapp-testrpc/issues"
+  },
+  "homepage": "https://github.com/ledgerlabs/dapp-testrpc#readme",
+  "dependencies": {
+    "web3": "^0.17.0-alpha"
+  }
+}
