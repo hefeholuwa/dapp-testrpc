@@ -4,6 +4,8 @@
   "description": "TestRPC dApp",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "testrpc": "testrpc",
     "test": "--"
   },
   "repository": {
